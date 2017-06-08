@@ -1,0 +1,250 @@
+#principal-page{
+	text-align: justify;
+    background-color: #e6e6e6;
+    width: 80%;
+    margin: 0 10%;
+    padding-top: 42px;
+    box-shadow: 0 0 5px #888888;
+    flex: 1;
+    display: flex;
+}
+/**ASIDE**/
+#principal-page>aside{
+	width: 14.4%;
+	position: absolute;
+	background-color: #e6e6e6;
+	height: auto;
+}
+#principal-page>aside>ul{
+	width: 92%;
+	padding: 15px 4%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#principal-page>aside>ul li{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	padding: 5px 0;
+}
+/**left aside**/
+
+/**Right Aside*/
+#cRight{
+	margin-left: 65.6%;
+}
+/*side elements*/
+.cMenu i{
+	width: 20%;
+	cursor: pointer;
+}
+.cMenu p{
+	width: 60%;
+	cursor: pointer;
+}
+#hSort{
+	width: 55%;
+	height: auto;
+	position: absolute;
+	background-color: #fff;
+	margin-left: 30%;
+	margin-top: 35px;
+	border:1px solid rgba(0, 0, 0, .15);
+	box-shadow: 0 0 0 rgba(0, 0, 0, .3);
+	border-radius: 3px;
+	display: none;
+}
+#hSort li{
+	margin: 0 !important;
+	padding: 0 !important;
+}	
+#hSort li p{
+	font-size: .8em;
+	padding: 3px 3px;
+}
+#hSort li i{
+	padding: 3px 0;
+	font-size: 1em;
+}
+#hSort li:last-child i{
+	visibility: hidden;
+}
+/**SECTION**/
+#principal-page>section{
+	width: 64%;
+	margin-left: 18%;
+}
+/**NEWS PAGE**/
+.pge-resume{
+	width: 98%;
+	background-color: #fff;
+    box-shadow: 0 0px 2px #888888;
+	display: flex;
+	flex-direction: column;
+	margin: 15px 1%;
+}
+.pge-resume:hover{
+	box-shadow: 0 0 6px #888888;
+}
+.pge-resume picture img{
+	width: 100%;
+}
+/*title*/
+.pge-resume>p{
+	font-size: 2.5em;
+	color: #f9f9f9;	
+    text-shadow: 0 0 2px #888888;
+	position: relative;
+	height: 0;
+	top: -1.5em;
+	padding: 0 2%;
+}
+.pge-resume>p>a{
+	color: #f9f9f9;
+}
+/* info */
+.pge-resume>div{
+	width: 100%;
+	padding: 15px 0;
+}
+/*autor*/
+.pge-resume>div>div:first-child>p:first-child{
+	color: #4f4f4f;
+	margin-bottom: 10px;
+	font-size: 1.1em;
+	padding: 0 2%;
+}
+
+.pge-resume>div>div:first-child>p:first-child>a{
+	color: #4f4f4f;
+}
+/*resume*/
+.pge-resume>div>div:first-child>p:last-child{
+	font-size: 1em;
+	line-height: 1.5em;
+	margin-bottom: 10px;
+	padding: 0 2%;
+}
+/*botonera*/
+.pge-resume>div>div:last-child{
+	display: flex;
+	font-size: 1.2em;
+	padding: 0 2%;
+    border-top: 1px solid #c1c1c1;
+}
+.pge-resume>div>div:last-child>p{
+	cursor: pointer;
+	margin-right: 30px;
+	margin-top: 15px;
+}
+.pge-resume>div>div:last-child>p:hover{
+	color: #7dc43a;
+    /*text-shadow: 0 0 1px #6eb52b;*/
+}
+.pge-resume>div>div:last-child>p>a{
+	color: #000;
+}
+.pge-resume>div>div:last-child>p>a:hover{
+	color: #7dc43a;
+    /*text-shadow: 0 0 1px #6eb52b;*/
+}
+/**ARTICLE PAGE**/
+.pge-art{
+	width: 98%;
+	display: flex;
+	flex-direction: column;
+	background-color: #fff;
+	box-shadow: 0 0px 2px #888888;
+	margin: 0 1%;
+	line-height: 1.8em;
+}
+/*images*/
+.p-img img{
+	width: 100%;
+}
+.s-img img{
+	width: 96%;
+	margin: 0 2%;
+}
+/*h1*/
+.pge-art h1{
+	font-size: 2.5em;
+	color: #f9f9f9;	
+    text-shadow: 0 0 2px #888888;
+	position: relative;
+	height: 0;
+	top: -1.5em;
+	padding: 0 2%;	
+}
+/*h2*/
+.pge-art h2{
+	padding: 10px 2%;
+	font-size: 1.4em;
+}
+/*h3*/
+.pge-art h3{
+	padding: 10px 2%;
+	font-size: 1.2em;
+}
+/*p*/
+.pge-art p{
+	padding: 10px 2%;
+	font-size: 1em;
+}
+/*ul*/
+.pge-art ul{
+	padding: 0 2%;
+	margin: 2px 0;
+}
+/*gist github*/
+.gist{
+	margin: 0 2%;
+	margin-top: 10px;
+}
+/*youtube*/
+.pge-art iframe{
+	width: 96%;
+	margin: 0 2%;
+}
+/*asciicast*/
+.asciicast{
+	width: 96%;
+	margin: 0 2% !important;
+}
+/*cli commands*/
+pre{
+	font-family: monospace;
+	background-color: #f1f1f1;
+	margin: 0 4%;
+	text-align: left;
+	overflow: auto;
+}
+/**indx**/
+#indx{
+	background-color: #f9f9f9;
+	border: 1px solid #aaa;
+	margin: 0 2%;
+	margin-bottom: 15px;
+	display: flex;
+	flex-direction: column;
+}
+#indx div{
+	align-self: center;
+	font-size: 1.2em;
+	padding: 5px;
+}
+#indx div span{
+	font-size: .8em;
+}
+#indx div span span{
+	color: #57b9f2;
+	cursor: pointer;
+}
+#indx li{
+	padding: 3px 0;
+}
+#indx a{
+	color: #57b9f2;
+}

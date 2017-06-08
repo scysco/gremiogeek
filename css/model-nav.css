@@ -1,0 +1,88 @@
+nav{
+    width: 80%;
+    padding: 0 10%;
+    background-color : #081828;
+    font-size: 20px;
+    position: fixed;
+    box-shadow: 0 3px 8px #888888;
+    z-index: 500;
+}
+#navbar{
+    width: 100%;
+    height: 42px;
+    padding: 0;
+    margin: 0;
+    color: #e6e6e6;
+    display: flex;
+    align-items: center;
+}
+#fn{
+    width: 30%;
+}
+#fn ul{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+#logo img{
+    height: 28px;
+}
+#logo a{
+    display: flex;
+    align-items: center;
+}
+#logo img{
+    padding-right: 3px;
+}
+#show-menu{
+    margin-right: 15px;
+}
+#sn{
+    width: 40%;
+    background-color: #152433;
+    padding: 0 1%;
+    border-radius: 5px;
+    border: 1px solid #081828;
+    display: flex;
+    align-items: center;
+}
+#sn ul{
+    width: 100%;
+    background-color: #152433;
+    padding: 0;
+    border : 0;
+    display: flex;
+    align-items: center;
+}
+#search-space{
+    width: 92%;
+}
+#sn input{
+    width: 100%;
+    height: 26px;
+    color: #e6e6e6;
+    padding: 0 10px;
+    font-size: 16px;
+    background-color: #152433;
+    border: none;
+}
+
+#tn{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+#tn ul{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+#tn li{
+    padding-left: 4%;
+}
+#tn img{
+    height: 28px;
+    border-radius: 5px;
+}

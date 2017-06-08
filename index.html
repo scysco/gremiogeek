@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+        <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+        <link href="css/reset.css" rel="stylesheet"/>
+        <link href="css/model.css" rel="stylesheet"/>
+        <link href="css/model-nav.css" rel="stylesheet"/>
+        <link href="css/model-menu.css" rel="stylesheet"/>
+        <link href="css/model-page.css" rel="stylesheet"/>
+        <link href="css/model-footer.css" rel="stylesheet"/>
+        <script src="js/scripts.js"></script>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+        <title>Gremio Geek</title>
+    </head>
+    <body>
+        <nav>
+            <ul id="navbar">
+                <li id="fn">
+                    <ul>
+                        <li id="show-menu"><i  onclick="showMenu()" style="cursor:pointer;" class="material-icons">menu</i></li>
+                        <li id="logo"><a href=""><img src="img/logo.png"/> remio Geek</a></li>
+                    </ul>
+                </li>
+                <li id="sn">
+                    <ul>
+                        <li><i class="material-icons" aria-hidden="true">search</i></li>
+                        <li id="search-space"><input type="text" name="search" placeholder="Buscar temas, herramientas y m&aacute;s..."></li>
+                    </ul>
+                </li>
+                <li id="tn">
+                    <ul>
+                        <li><a href=""><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+                        <li><a href=""><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+                        <li><a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                        <li><a href=""><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                        <li><a href=""><i class="fa fa-telegram" aria-hidden="true"></i></a></li>
+                        <li><i class="material-icons" aria-hidden="true" style="cursor:pointer">more_vert</i></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <section id="principal-page">
+            <aside id="cLeft">
+                <ul class="cMenu">
+                    <li>
+                        <i class="material-icons">web</i>
+                        <p>Inicio</p>
+                        <i class="material-icons" onclick="homeSortAppear()" >more_horiz</i>
+                        <ul id="hSort">
+                             <li onclick="homeSort(0)"><i class="material-icons">check</i><p>Destacado</p></li>
+                             <li onclick="homeSort(1)"><i class="material-icons">check</i><p>Reciente</p></li>
+                        </ul>
+                    </li>
+                    <li><i class="material-icons">today</i><p>Noticias</p></li>
+                    <li><i class="material-icons">subject</i><p>Articulos</p></li>
+                    <li><i class="material-icons">view_list</i><p>Secciones</p></li>
+                </ul>                                        
+            </aside>
+            <section>
+                <article class="pge-resume">
+                    <a href="#">
+                        <picture>
+                            <source media="(min-width: 800px)" srcset="http://lorempixel.com/800/400"> 
+                            <img src="http://lorempixel.com/400/200" alt="Title"/>
+                        </picture>
+                    </a>
+                    <p><a href="#">Title</a></p>
+                    <div>
+                        <div>
+                            <p><a href="#">Autor</a></p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium nam vitae porro, ullam magni ut magnam impedit dolorem! Laudantium tenetur obcaecati omnis saepe fugit animi nam voluptatum labore, quam odit?</p>
+                        </div>
+                        <div>
+                            <p>COMPARTIR</p>
+                            <p><a href="">ABRIR</a></p>
+                        </div>
+                    </div>
+                </article>
+                <article class="pge-art">
+                    <div>
+                        <picture class="p-img">
+                            <source media="(min-width: 800px)" srcset="http://lorempixel.com/800/400"> 
+                            <img src="http://lorempixel.com/400/200" alt="Title"/>
+                        </picture>
+                        <h1>lorem ipsum</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, voluptatem ipsam, aliquam eum neque cupiditate error tempore ad voluptas dolorum, dignissimos molestiae officiis quas obcaecati possimus dolores consectetur impedit ullam.</p>
+                        <div id="indx">
+                            <div>&Iacute;ndice <span>[<span id="toggleIndx" onclick="toggleIndx()">ocultar</span>]</span> </div>
+                            <ul>
+                                <li><a href="#enlace">1. lorem</a></li>
+                                <li><a href="">2. ipsum</a>
+                                    <ul>
+                                        <li><a href="">2.1. dolor</a></li>
+                                        <li><a href="">2.2. sit</a></li>
+                                        <li><a href="">2.3. amet</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="">3. consectetur</a></li>
+                            </ul>
+                        </div>
+                        <h2 id="enlace">subtitulo(opcional)</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure quo, accusamus repudiandae. Quibusdam aliquid possimus, voluptate maiores inventore natus eos autem expedita odio repellendus voluptatem suscipit! Porro fuga perspiciatis dicta.</p>
+                        <pre> # cd /home/scysco</pre>
+                        <h2>subtitulo(opcional)</h2>
+                        <script src="https://gist.github.com/scysco/c7d6a930609ab637f54c029128a1eb78.js"></script>
+                        <h3>subsubtitlo(opcional)</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis cum amet accusantium excepturi dolorem atque ratione corporis! Excepturi nulla culpa libero commodi non iste atque minus sapiente. Delectus, ab, sapiente?</p>
+                        <h3>subsubtitlo(opcional)</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit ipsam molestiae delectus iusto voluptate neque ipsum nam totam at commodi nobis consequuntur, ea rem odit esse adipisci veniam, corporis illum.</p>
+                        <picture class="s-img">
+                            <source media="(min-width: 800px)" srcset="http://lorempixel.com/800/400"> 
+                            <img src="http://lorempixel.com/400/200" alt="Title"/>
+                        </picture>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit ipsam molestiae delectus iusto voluptate neque ipsum nam totam at commodi nobis consequuntur, ea rem odit esse adipisci veniam, corporis illum.</p>
+                        <h3>subsubtitlo(opcional)</h3>
+                        <script src="https://gist.github.com/scysco/c7d6a930609ab637f54c029128a1eb78.js"></script>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur ex error assumenda animi fugit nobis quia, architecto sequi repellat rem sit, eum sapiente mollitia voluptate saepe? A hic saepe fugit.</p>
+                        <h2>subtitulo(opcional)</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure quo, accusamus repudiandae. Quibusdam aliquid possimus, voluptate maiores inventore natus eos autem expedita odio repellendus voluptatem suscipit! Porro fuga perspiciatis dicta.</p>
+                        <pre> # [yum|dnf|zypper] install http://www.imagemagick.org/download/linux/CentOS/x86_64/ImageMagick-6.9.3-5.x86_64.rpm</pre>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, quas maxime, libero, sit molestias repellendus amet quod cupiditate dolorum aperiam officiis voluptatum illo qui odit ad laudantium reprehenderit praesentium neque.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo laborum, nisi magnam porro quibusdam, excepturi praesentium voluptas beatae, deleniti nostrum quae totam, dolor. Reprehenderit vero recusandae, temporibus inventore ipsa ea.</p>
+                        <h2>subtitulo(opcional)</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque aliquam sit modi doloremque delectus quia facere consectetur fugiat ad necessitatibus explicabo, consequuntur quidem architecto numquam excepturi, deserunt repellendus! Nostrum, voluptatem.</p>
+                        <iframe width="420" height="310"
+                            src="https://www.youtube.com/embed/_Ni83f1k-Ys">
+                        </iframe>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio laboriosam debitis, tempore provident ratione aut dolores, quam vel aliquam blanditiis dolore? Omnis nulla sapiente accusantium temporibus tempore optio suscipit ad?</p>
+                        <h2>subtitulo(opcional)</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque aliquam sit modi doloremque delectus quia facere consectetur fugiat ad necessitatibus explicabo, consequuntur quidem architecto numquam excepturi, deserunt repellendus! Nostrum, voluptatem.</p>
+                        <script type="text/javascript" src="https://asciinema.org/a/123352.js" id="asciicast-123352" async></script>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio laboriosam debitis, tempore provident ratione aut dolores, quam vel aliquam blanditiis dolore? Omnis nulla sapiente accusantium temporibus tempore optio suscipit ad?</p>
+                    </div>
+                    <div>
+                        comentarios
+                    </div>
+                </article>                
+            </section>
+            <aside id="cRight">
+                <ul>
+                    <li><i class="material-icons">web</i><p>Inicio</p><i class="material-icons">more_horiz</i></li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa quam fugit, ullam minus pariatur autem, deleniti eum eligendi laborum unde recusandae eveniet illum sed vero nostrum voluptatum nisi eaque odio.</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur laborum libero asperiores. Laudantium ipsa eum, molestiae delectus, in illo accusamus fugiat ea odit voluptas ullam! Repellat ab eum fugiat porro!</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, pariatur, provident? Fugit et distinctio, veniam officia, aliquam repellendus. Recusandae veritatis laudantium enim reiciendis quidem minus facilis fugit eius, incidunt porro.</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis libero quas quisquam deleniti, delectus! Doloremque, error laudantium voluptatibus perferendis ducimus aliquam soluta dolorum ipsa. A praesentium consequuntur eos enim facere.</li>
+                    <li><i class="material-icons">web</i><p>Inicio</p><i class="material-icons">more_horiz</i></li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa quam fugit, ullam minus pariatur autem, deleniti eum eligendi laborum unde recusandae eveniet illum sed vero nostrum voluptatum nisi eaque odio.</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur laborum libero asperiores. Laudantium ipsa eum, molestiae delectus, in illo accusamus fugiat ea odit voluptas ullam! Repellat ab eum fugiat porro!</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, pariatur, provident? Fugit et distinctio, veniam officia, aliquam repellendus. Recusandae veritatis laudantium enim reiciendis quidem minus facilis fugit eius, incidunt porro.</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis libero quas quisquam deleniti, delectus! Doloremque, error laudantium voluptatibus perferendis ducimus aliquam soluta dolorum ipsa. A praesentium consequuntur eos enim facere.</li>
+                    <li><i class="material-icons">web</i><p>Inicio</p><i class="material-icons">more_horiz</i></li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa quam fugit, ullam minus pariatur autem, deleniti eum eligendi laborum unde recusandae eveniet illum sed vero nostrum voluptatum nisi eaque odio.</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur laborum libero asperiores. Laudantium ipsa eum, molestiae delectus, in illo accusamus fugiat ea odit voluptas ullam! Repellat ab eum fugiat porro!</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, pariatur, provident? Fugit et distinctio, veniam officia, aliquam repellendus. Recusandae veritatis laudantium enim reiciendis quidem minus facilis fugit eius, incidunt porro.</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis libero quas quisquam deleniti, delectus! Doloremque, error laudantium voluptatibus perferendis ducimus aliquam soluta dolorum ipsa. A praesentium consequuntur eos enim facere.</li>
+                </ul>                                                   
+            </aside>
+        </section>
+        <div id="shdwMenu" onclick="hideMenu()"></div>
+        <section id="menu">
+            <ul>
+                <li>
+                    <ul>
+                        <li id="hide-menu"><i  onclick="hideMenu()" style="cursor:pointer;" class="material-icons">menu</i></li>
+                        <li id="logo"><a href=""><img src="img/logo.png"/> remio Geek</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="bttn">
+                        <li><i class="material-icons">home</i></li>
+                        <li>Inicio</li>
+                    </ul>
+                    <ul class="bttn">
+                        <li><i class="material-icons">group</i></li>
+                        <li>Grupos</li>
+                    </ul>
+                    <ul class="bttn">
+                        <li><i class="material-icons">explore</i></li>
+                        <li>Descubrir</li>
+                    </ul>
+                    <ul class="bttn">
+                        <li><i class="material-icons">store</i></li>
+                        <li>Tienda</li>
+                    </ul>
+                </li>
+                <li id="following-menu">
+                </li>
+            </ul>
+        </section>
+    </body>
+</html>
