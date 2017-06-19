@@ -74,6 +74,7 @@
 /**SECTION**/
 #principal-page>section{
 	width: 64%;
+	min-height: 100vh;
 	margin-left: 18%;
 }
 /**NEWS PAGE**/
