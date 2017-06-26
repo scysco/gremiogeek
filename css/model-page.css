@@ -22,7 +22,6 @@
 	flex-direction: column;
 	align-items: center;
 }
-
 #sidebar-left aside>ul li, #sidebar-right aside>ul li{
 	width: 100%;
 	display: flex;
