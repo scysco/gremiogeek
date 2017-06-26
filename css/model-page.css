@@ -9,13 +9,13 @@
     display: flex;
 }
 /**ASIDE**/
-#principal-page aside{
+#sidebar-right, #sidebar-left{
 	width: 14.4%;
 	position: absolute;
 	background-color: #e6e6e6;
 	height: auto;
 }
-#principal-page aside>ul{
+#sidebar-left aside>ul, #sidebar-right aside>ul{
 	width: 92%;
 	padding: 15px 4%;
 	display: flex;
@@ -23,7 +23,7 @@
 	align-items: center;
 }
 
-#principal-page aside>ul li{
+#sidebar-left aside>ul li, #sidebar-right aside>ul li{
 	width: 100%;
 	display: flex;
 	align-items: center;
@@ -32,7 +32,7 @@
 /**left aside**/
 
 /**Right Aside*/
-#sidebar-Right{
+#sidebar-right{
 	margin-left: 65.6%;
 }
 /*side elements*/
