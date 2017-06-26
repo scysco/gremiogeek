@@ -9,7 +9,7 @@
     display: flex;
 }
 /**ASIDE**/
-#sidebar-right, #sidebar-left{
+#sidebar-right, #sidebar-left, #sidebar-right aside, #sidebar-left aside{
 	width: 14.4%;
 	position: absolute;
 	background-color: #e6e6e6;
