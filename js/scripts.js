@@ -13,7 +13,7 @@ function hideMenu(){
         document.getElementById("menu").style.marginLeft = "-30%";
     }else if(document.body.clientWidth <= 1360){
         document.getElementById("menu").style.marginLeft = "-24%";
-    }else if(document.body.clientWidth <= 2400){
+    }else if(document.body.clientWidth > 1360){
         document.getElementById("menu").style.marginLeft = "-20%";
     }
     document.getElementById("shdwMenu").style.display = "none";
