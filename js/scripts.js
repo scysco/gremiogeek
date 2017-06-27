@@ -14,7 +14,7 @@ function hideMenu(){
     }else if(document.body.clientWidth <= 1360){
         document.getElementById("menu").style.marginLeft = "-24%";
     }else if(document.body.clientWidth > 1360){
-        document.getElementById("menu").style.marginLeft = "-20%";
+        document.getElementById("menu").style.marginLeft = "-24%";
     }
     document.getElementById("shdwMenu").style.display = "none";
     var fnStyle = document.getElementById("fn").style;
