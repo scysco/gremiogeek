@@ -7,7 +7,15 @@ function showMenu(){
     fnStyle.visibility = "hidden";
 }
 function hideMenu(){
-    document.getElementById("menu").style.marginLeft = "-20%";
+    if(document.body.clientWidth <= 900){
+        document.getElementById("menu").style.marginLeft = "-50%";
+    }else if(document.body.clientWidth <= 1150){
+        document.getElementById("menu").style.marginLeft = "-30%";
+    }else if(document.body.clientWidth <= 1360){
+        document.getElementById("menu").style.marginLeft = "-24%";
+    }else if(document.body.clientWidth <= 2400){
+        document.getElementById("menu").style.marginLeft = "-20%";
+    }
     document.getElementById("shdwMenu").style.display = "none";
     var fnStyle = document.getElementById("fn").style;
     fnStyle.visibility = "visible";
