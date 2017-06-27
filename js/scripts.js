@@ -7,7 +7,9 @@ function showMenu(){
     fnStyle.visibility = "hidden";
 }
 function hideMenu(){
-    if(document.body.clientWidth <= 900){
+    if(document.body.clientWidth <= 500){
+        document.getElementById("menu").style.marginLeft = "-80%";
+    }else if(document.body.clientWidth <= 900){
         document.getElementById("menu").style.marginLeft = "-50%";
     }else if(document.body.clientWidth <= 1150){
         document.getElementById("menu").style.marginLeft = "-30%";
