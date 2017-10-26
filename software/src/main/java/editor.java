@@ -30,6 +30,7 @@ class editor{
 	int codecnt = 0;
 	int precnt = 0;
 	int ytbcnt = 0;
+	int pdfcnt = 0;
 	ArrayList<JTextArea> txtTitle = new ArrayList<JTextArea>();
 	ArrayList<JTextArea> txtSubTitle = new ArrayList<JTextArea>();
 	ArrayList<JTextArea> txtArticle = new ArrayList<JTextArea>();
@@ -37,6 +38,7 @@ class editor{
 	ArrayList<JTextArea> txtCode = new ArrayList<JTextArea>();
 	ArrayList<JTextArea> txtPre = new ArrayList<JTextArea>();
 	ArrayList<JTextArea> txtYT = new ArrayList<JTextArea>();
+	ArrayList<JTextArea> txtPDF = new ArrayList<JTextArea>();
 	String order = "-";
 	JTextArea jtImage;
 	JTextArea jtTitle;
@@ -48,6 +50,7 @@ class editor{
 	void mkGUI(){
 		frame = new JFrame("Blogger GremioGeek");
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.setSize(800,400);
 		frame.setJMenuBar(mkMenu());
 
 		JPanel jp = new JPanel();
@@ -135,38 +138,37 @@ class editor{
 		int c_c = 0;
 		int c_pr = 0;
 		int c_y = 0;
+		int c_pdf = 0;
 
 		for (int a = 0; a < order.split("-").length; a++){
 			if(order.split("-")[a].equals("t")){
 				plantilla += subTitle[c_t]+"\n";
 				c_t++;
-			}
-			if(order.split("-")[a].equals("st")){
+			}else if(order.split("-")[a].equals("st")){
 				plantilla += subSubTitle[c_st]+"\n";
 				c_st++;
-			}
-			if(order.split("-")[a].equals("p")){
+			}else if(order.split("-")[a].equals("p")){
 				plantilla += "<p>"+txtArticle.get(c_p).getText()+"</p>\n";
 				c_p++;
-			}
-			if(order.split("-")[a].equals("pr")){
+			}else if(order.split("-")[a].equals("pr")){
 				plantilla += "<pre>"+txtPre.get(c_pr).getText()+"</pre>\n";
 				c_pr++;
-			}
-			if(order.split("-")[a].equals("i")){
+			}else if(order.split("-")[a].equals("i")){
 				plantilla += "<picture class=\"s-img\">\n"
 							+"	<img src=\""+txtImage.get(c_i).getText()+"\"/>\n"
 							+"</picture>\n";
 				c_i++;
-			}
-			if(order.split("-")[a].equals("c")){
+			}else if(order.split("-")[a].equals("c")){
 				plantilla += "<script src=\"https://gist.github.com/scysco/"+txtCode.get(c_c).getText()+"\"></script>";
 				c_c++;
-			}
-			if(order.split("-")[a].equals("y")){
-				plantilla += "<iframe width=\"420\" height=\"370\" src=\"https://www.youtube.com/embed/"+txtYT.get(c_y).getText()+"\">\n"
+			}else if(order.split("-")[a].equals("y")){
+				plantilla += "<iframe width=\"420\" height=\"370\" src=\"https://www.youtube.com/embed/"+txtYT.get(c_y).getText()+"\" class=\"youtube-video\">\n"
 							+"</iframe>\n";
 				c_y++;
+			}else if(order.split("-")[a].equals("pdf")){
+				plantilla += "<iframe width=\"420\" height=\"570\" src=\"https://drive.google.com/file/d/"+txtPDF.get(c_pdf).getText()+"/preview\" class=\"pdf-drive\">\n"
+							+"</iframe>\n";
+				c_pdf++;
 			}
 		}
 		plantillaPost.setText(plantilla);
@@ -176,7 +178,8 @@ class editor{
 	}
 	JFrame frameExt(){
 		JFrame frameExt = new JFrame("To post");
-		frameExt.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frameExt.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+		frameExt.setSize(800,400);
 		frameExt.add(new JScrollPane(plantillaPost));
 		return frameExt;
 	}
@@ -257,12 +260,24 @@ class editor{
 			order += "-y";
 		}
 	}
+	void addSubPdf(){
+		txtPDF.add(pdfcnt, mkTextArea(1,12));
+		txtPDF.get(pdfcnt).setBackground(new Color(75,67,50,100));
+		jpBody.add(txtPDF.get(pdfcnt));
+		pdfcnt++;
+		if(order.equals("-")){
+			order = "pdf";
+		}else{
+			order += "-pdf";
+		}
+	}
 	JTextArea mkTextArea(int size, int font){
 		JTextArea jt = new JTextArea(size, 0);
 		jt.setLineWrap(true);
 		jt.setWrapStyleWord(true);
 		jt.setBorder(BorderFactory.createLineBorder(Color.black));
 		jt.setFont(new Font("Arial",Font.PLAIN,font));
+		
 		return jt;
 	}
 	JMenuBar mkMenu(){
@@ -377,6 +392,20 @@ class editor{
    			}
 		});
 		menu.add(menuItem6);
+
+		JMenuItem menuItem7 = new JMenuItem("Libro",
+		                         KeyEvent.VK_T);
+		menuItem7.setAccelerator(KeyStroke.getKeyStroke(
+		        KeyEvent.VK_1, ActionEvent.ALT_MASK));
+		menuItem7.getAccessibleContext().setAccessibleDescription(
+		        "nuevo libro");
+		menuItem7.addActionListener(new ActionListener() { 
+   			public void actionPerformed(ActionEvent e) {
+   				addSubPdf();
+   				SwingUtilities.updateComponentTreeUI(frame);
+   			}
+		});
+		menu.add(menuItem7);
 		
 		//a submenu
 		menu.addSeparator();
