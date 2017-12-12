@@ -4,10 +4,10 @@ apply plugin: "application"
 sourceCompatibility = "1.8"
 version = "1.0"
 
-mainClassName = "gremiogeekblog"
+mainClassName = "GremioGeekGlog"
 
 jar{
 	manifest{
-		attributes "Main-Class": 'gremiogeekblog'
+		attributes "Main-Class": 'GremioGeekBlog'
 	}
 }
