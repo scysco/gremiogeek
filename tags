@@ -3,7 +3,8 @@
 !_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
-!_TAG_PROGRAM_VERSION	5.8	//
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+API	Gremio_Geek-Software/GGBlogger(Swing)/src/main/java/com/gremioggek/ggblogger/gui/API.java	/^public class API {$/;"	c
 APP_BASE_NAME	Gremio_Geek-Software/Converter/build/scripts/software.bat	/^set APP_BASE_NAME=%~n0$/;"	v
 APP_HOME	Gremio_Geek-Software/Converter/build/scripts/software.bat	/^set APP_HOME=%DIRNAME%..$/;"	v
 CLASSPATH	Gremio_Geek-Software/Converter/build/scripts/software.bat	/^set CLASSPATH=%APP_HOME%\\lib\\software-1.0.jar$/;"	v
@@ -12,7 +13,10 @@ CMD_LINE_ARGS	Gremio_Geek-Software/Converter/build/scripts/software.bat	/^set CM
 DEFAULT_JVM_OPTS	Gremio_Geek-Software/Converter/build/scripts/software.bat	/^set DEFAULT_JVM_OPTS=$/;"	v
 DIRNAME	Gremio_Geek-Software/Converter/build/scripts/software.bat	/^if "%DIRNAME%" == "" set DIRNAME=.$/;"	v
 DIRNAME	Gremio_Geek-Software/Converter/build/scripts/software.bat	/^set DIRNAME=%~dp0$/;"	v
-GGBlogger	Gremio_Geek-Software/GGBlogger/src/main/java/com/gremioggek/ggblogger/GGBlogger.java	/^class GGBlogger {$/;"	c
+GGBlogger	Gremio_Geek-Software/GGBlogger(FX)/src/main/java/com/gremiogeek/ggblogger/GGBlogger.java	/^public class GGBlogger extends Application {$/;"	c
+GGBlogger	Gremio_Geek-Software/GGBlogger(Swing)/src/main/java/com/gremioggek/ggblogger/GGBlogger.java	/^class GGBlogger {$/;"	c
+GUI	Gremio_Geek-Software/GGBlogger(Swing)/src/main/java/com/gremioggek/ggblogger/gui/gui/GUI.java	/^  public GUI() {$/;"	m	class:GUI
+GUI	Gremio_Geek-Software/GGBlogger(Swing)/src/main/java/com/gremioggek/ggblogger/gui/gui/GUI.java	/^public class GUI {$/;"	c
 JAVA_EXE	Gremio_Geek-Software/Converter/build/scripts/software.bat	/^set JAVA_EXE=%JAVA_HOME%\/bin\/java.exe$/;"	v
 JAVA_EXE	Gremio_Geek-Software/Converter/build/scripts/software.bat	/^set JAVA_EXE=java.exe$/;"	v
 JAVA_HOME	Gremio_Geek-Software/Converter/build/scripts/software.bat	/^set JAVA_HOME=%JAVA_HOME:"=%$/;"	v
@@ -26,7 +30,11 @@ addSubST	Gremio_Geek-Software/Converter/src/main/java/Editor.java	/^	void addSub
 addSubT	Gremio_Geek-Software/Converter/src/main/java/Editor.java	/^	void addSubT(){$/;"	m	class:editor
 addSubY	Gremio_Geek-Software/Converter/src/main/java/Editor.java	/^	void addSubY(){$/;"	m	class:editor
 codecnt	Gremio_Geek-Software/Converter/src/main/java/Editor.java	/^	int codecnt = 0;$/;"	f	class:editor
-com.gremioggek.ggblogger	Gremio_Geek-Software/GGBlogger/src/main/java/com/gremioggek/ggblogger/GGBlogger.java	/^package com.gremioggek.ggblogger;$/;"	p
+com.gremiogeek.ggblogger	Gremio_Geek-Software/GGBlogger(FX)/src/main/java/com/gremiogeek/ggblogger/GGBlogger.java	/^package com.gremiogeek.ggblogger;$/;"	p
+com.gremioggek.ggblogger	Gremio_Geek-Software/GGBlogger(Swing)/src/main/java/com/gremioggek/ggblogger/GGBlogger.java	/^package com.gremioggek.ggblogger;$/;"	p
+com.gremioggek.ggblogger.gui	Gremio_Geek-Software/GGBlogger(Swing)/src/main/java/com/gremioggek/ggblogger/gui/API.java	/^package com.gremioggek.ggblogger.gui;$/;"	p
+com.gremioggek.ggblogger.gui.gui	Gremio_Geek-Software/GGBlogger(Swing)/src/main/java/com/gremioggek/ggblogger/gui/gui/GUI.java	/^package com.gremioggek.ggblogger.gui.gui;$/;"	p
+die	Gremio_Geek-Software/Converter/build/scripts/software	/^die () {$/;"	f
 editor	Gremio_Geek-Software/Converter/src/main/java/Editor.java	/^	public editor(){$/;"	m	class:editor
 editor	Gremio_Geek-Software/Converter/src/main/java/Editor.java	/^class editor{$/;"	c
 end	Gremio_Geek-Software/Converter/build/scripts/software.bat	/^:end$/;"	l
@@ -46,18 +54,26 @@ jpBody	Gremio_Geek-Software/Converter/src/main/java/Editor.java	/^	JPanel jpBody
 jtImage	Gremio_Geek-Software/Converter/src/main/java/Editor.java	/^	JTextArea jtImage;$/;"	f	class:editor
 jtIntro	Gremio_Geek-Software/Converter/src/main/java/Editor.java	/^	JTextArea jtIntro;$/;"	f	class:editor
 jtTitle	Gremio_Geek-Software/Converter/src/main/java/Editor.java	/^	JTextArea jtTitle;$/;"	f	class:editor
+labelGG	Gremio_Geek-Software/GGBlogger(Swing)/src/main/java/com/gremioggek/ggblogger/gui/API.java	/^  public JLabel labelGG(){$/;"	m	class:API
+logo	Gremio_Geek-Software/GGBlogger(Swing)/src/main/java/com/gremioggek/ggblogger/gui/API.java	/^  public JLabel logo(int width, int height){$/;"	m	class:API
 main	Gremio_Geek-Software/Converter/src/main/java/GremioGeekBlog.java	/^	public static void main(String[] args) {$/;"	m	class:gremiogeekblog
-main	Gremio_Geek-Software/GGBlogger/src/main/java/com/gremioggek/ggblogger/GGBlogger.java	/^  public static void main(String args[]) {$/;"	m	class:GGBlogger
+main	Gremio_Geek-Software/GGBlogger(FX)/src/main/java/com/gremiogeek/ggblogger/GGBlogger.java	/^  public static void main(String[] args) {$/;"	m	class:GGBlogger
+main	Gremio_Geek-Software/GGBlogger(Swing)/src/main/java/com/gremioggek/ggblogger/GGBlogger.java	/^  public static void main(String args[]) {$/;"	m	class:GGBlogger
 mainEnd	Gremio_Geek-Software/Converter/build/scripts/software.bat	/^:mainEnd$/;"	l
 mkGUI	Gremio_Geek-Software/Converter/src/main/java/Editor.java	/^	void mkGUI(){$/;"	m	class:editor
 mkMenu	Gremio_Geek-Software/Converter/src/main/java/Editor.java	/^	JMenuBar mkMenu(){$/;"	m	class:editor
 mkTextArea	Gremio_Geek-Software/Converter/src/main/java/Editor.java	/^	JTextArea mkTextArea(int size, int font){$/;"	m	class:editor
 omega	Gremio_Geek-Software/Converter/build/scripts/software.bat	/^:omega$/;"	l
 order	Gremio_Geek-Software/Converter/src/main/java/Editor.java	/^	String order = "-";$/;"	f	class:editor
+panelGG	Gremio_Geek-Software/GGBlogger(Swing)/src/main/java/com/gremioggek/ggblogger/gui/API.java	/^  public JPanel panelGG(){$/;"	m	class:API
 pdfcnt	Gremio_Geek-Software/Converter/src/main/java/Editor.java	/^	int pdfcnt = 0;$/;"	f	class:editor
 plantillaPost	Gremio_Geek-Software/Converter/src/main/java/Editor.java	/^	JTextArea plantillaPost = mkTextArea(1,12);$/;"	f	class:editor
 precnt	Gremio_Geek-Software/Converter/src/main/java/Editor.java	/^	int precnt = 0;$/;"	f	class:editor
+principal	Gremio_Geek-Software/GGBlogger(Swing)/src/main/java/com/gremioggek/ggblogger/gui/API.java	/^  public JFrame principal(){$/;"	m	class:API
+save	Gremio_Geek-Software/Converter/build/scripts/software	/^save () {$/;"	f
 showMenu	Gremio_Geek-Web/js/scripts.js	/^function showMenu(){$/;"	f
+splash	Gremio_Geek-Software/GGBlogger(Swing)/src/main/java/com/gremioggek/ggblogger/gui/API.java	/^  public JFrame splash(){$/;"	m	class:API
+start	Gremio_Geek-Software/GGBlogger(FX)/src/main/java/com/gremiogeek/ggblogger/GGBlogger.java	/^  public void start(Stage primaryStage) {$/;"	m	class:GGBlogger
 subpcnt	Gremio_Geek-Software/Converter/src/main/java/Editor.java	/^	int subpcnt = 0;$/;"	f	class:editor
 substcnt	Gremio_Geek-Software/Converter/src/main/java/Editor.java	/^	int substcnt = 0;$/;"	f	class:editor
 subtcnt	Gremio_Geek-Software/Converter/src/main/java/Editor.java	/^	int subtcnt = 0;$/;"	f	class:editor
@@ -70,6 +86,7 @@ txtPre	Gremio_Geek-Software/Converter/src/main/java/Editor.java	/^	ArrayList<JTe
 txtSubTitle	Gremio_Geek-Software/Converter/src/main/java/Editor.java	/^	ArrayList<JTextArea> txtSubTitle = new ArrayList<JTextArea>();$/;"	f	class:editor
 txtTitle	Gremio_Geek-Software/Converter/src/main/java/Editor.java	/^	ArrayList<JTextArea> txtTitle = new ArrayList<JTextArea>();$/;"	f	class:editor
 txtYT	Gremio_Geek-Software/Converter/src/main/java/Editor.java	/^	ArrayList<JTextArea> txtYT = new ArrayList<JTextArea>();$/;"	f	class:editor
+warn	Gremio_Geek-Software/Converter/build/scripts/software	/^warn () {$/;"	f
 win9xME_args	Gremio_Geek-Software/Converter/build/scripts/software.bat	/^:win9xME_args$/;"	l
 win9xME_args_slurp	Gremio_Geek-Software/Converter/build/scripts/software.bat	/^:win9xME_args_slurp$/;"	l
 ytbcnt	Gremio_Geek-Software/Converter/src/main/java/Editor.java	/^	int ytbcnt = 0;$/;"	f	class:editor
